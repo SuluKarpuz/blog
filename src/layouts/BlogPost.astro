@@ -14,18 +14,72 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>
+			/* Title styling */
 			.title {
-				font-size: 2em;
-				margin: 0.25em 0 0;
+			  font-size: 2em;
+			  margin: 0.25em 0 0;
+			  font-weight: bold;
+			  text-align: center;
+			  text-transform: capitalize;
 			}
+		  
+			/* Horizontal rule styling */
 			hr {
-				border-top: 1px solid #ddd;
-				margin: 1rem 0;
+			  border-top: 1px solid #ddd;
+			  margin: 1rem 0;
+			  opacity: 0.5;
+			  height: 0.25rem;
 			}
+		  
+			/* Last updated on styling */
 			.last-updated-on {
-				font-style: italic;
+			  font-style: italic;
+			  margin-top: 1rem;
+			  text-align: right;
+			  font-size: 0.8em;
+			  color: #999;
 			}
-		</style>
+		  
+			/* Paragraph styling */
+			p {
+			  font-size: 1.1em;
+			  line-height: 1.5;
+			  margin: 1rem 0;
+			  text-align: justify;
+			}
+		  
+			/* Image styling */
+			img {
+			  max-width: 100%;
+			  height: auto;
+			  display: block;
+			  margin: 1rem auto;
+			  border: 2px solid #ddd;
+			  box-shadow: 2px 2px 5px #ccc;
+			}
+		  
+			/* Code block styling */
+			pre {
+			  background-color: #f8f8f8;
+			  padding: 1rem;
+			  border: 1px solid #ddd;
+			  border-radius: 0.25rem;
+			  font-size: 0.9em;
+			  overflow-x: auto;
+			}
+		  
+			/* Link styling */
+			a {
+			  color: #0077cc;
+			  text-decoration: none;
+			  border-bottom: 1px dotted #0077cc;
+			}
+		  
+			a:hover {
+			  color: #004499;
+			  border-bottom: 1px solid #004499;
+			}
+		  </style>
 	</head>
 
 	<body>
